@@ -127,7 +127,7 @@ form{
 .search{
     width: 60%;
     height: 43px;
-    border-radius: 3px;
+    border-radius: 7px;
     padding: 14px;
     color: rgba(0, 0, 0, 0.6);
     font-size: 16px;
@@ -141,8 +141,8 @@ form{
     border-left: none;
     padding: 0px 10px;
 
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .search:focus{
@@ -229,7 +229,7 @@ width: 100%;
 
 /* section 3 */
 
-.sec3{
+.sec3 , .sec4, .sec5{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,23 +237,23 @@ width: 100%;
     margin-bottom: 20px;
 
 }
-.sec3-box1{
+.sec3-box {
     width: 80%;
     /* border: 2px solid black; */
     height: 180px;
     text-align: center;
 }
 
-.sec3-box1 h1{
+.sec3-box h1 , .sec4-box h1, .sec5-box h1{
 font-size: 48px;
 margin-top: 20px;
 }
 
-.sec3-box1 span{
+.sec3-box span, .sec4-box span, .sec5-box span {
     color: #6851ff;
 }
 
-.sec3-box1 p{
+.sec3-box p, .sec4-box p {
     font-size: 20px;
 }
 .parentbox{
@@ -262,6 +262,8 @@ margin-top: 20px;
     display: flex;
     width: 80%;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 
 }
 .childbox{
@@ -269,7 +271,7 @@ width: 24%;
 background: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0));
 box-shadow: 0 4px 40px #bdb2ff3d;
 border-radius: 24px;
-/* border: 2px solid black; */
+border: 2px solid white;
 height: 220px;
 transition: all .6s ease;
 display: flex;
@@ -297,4 +299,68 @@ color: #6453e0;
     line-height: 26px;
     font-weight: 400;
     color: black;
+}
+
+/* section 4 */
+
+.sec4-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sec4-box h1{
+    font-size: 56px;
+}
+.sec4-box p{
+    font-size: 24px;
+}
+
+
+/* section 5 */
+
+.sec5{
+    margin-top: 100px;
+    
+}
+.sec5-box{
+    width: 80%;
+    text-align: center;
+}
+.sec5-box h1{
+    font-size: 51px;
+}
+
+/* job section */
+
+.jobslist{
+margin-top: 50px;
+}
+
+
+.job-box{
+    margin-bottom: 12px;
+    justify-content: center;
+}
+
+.job-box a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.job-box h2{
+    color: #4d3bdb;
+}
+
+
+.job-box p{
+    color: rgb(108, 108, 108);
 }
