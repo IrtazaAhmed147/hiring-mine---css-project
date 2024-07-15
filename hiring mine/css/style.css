@@ -225,3 +225,76 @@ form{
 .sec2 img{
 width: 100%;
 }
+
+
+/* section 3 */
+
+.sec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.sec3-box1{
+    width: 80%;
+    /* border: 2px solid black; */
+    height: 180px;
+    text-align: center;
+}
+
+.sec3-box1 h1{
+font-size: 48px;
+margin-top: 20px;
+}
+
+.sec3-box1 span{
+    color: #6851ff;
+}
+
+.sec3-box1 p{
+    font-size: 20px;
+}
+.parentbox{
+    height: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+.childbox{
+width: 24%;
+background: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0));
+box-shadow: 0 4px 40px #bdb2ff3d;
+border-radius: 24px;
+/* border: 2px solid black; */
+height: 220px;
+transition: all .6s ease;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 10px;
+
+color: #6453e0;
+}
+.childbox:hover{
+    box-shadow: 0 4px 40px #3b3b3b3d;
+}
+
+.icon-btn{
+    color: #4d3bdb;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.childbox p{
+    font-size: 17px;
+    margin: 0px 35px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+}
