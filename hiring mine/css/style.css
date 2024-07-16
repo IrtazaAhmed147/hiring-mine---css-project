@@ -249,7 +249,7 @@ form {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 130px;
 
 }
 
@@ -350,11 +350,6 @@ form {
 
 /* section 5 */
 
-.sec5 {
-    margin-top: 100px;
-    margin-bottom: 200px;
-
-}
 
 .sec5-box {
     width: 80%;
@@ -498,4 +493,142 @@ form {
     justify-content: space-between;
     padding: 0px 20px;
 
+}
+
+/* section 7 */
+.sec7{
+    margin: 100px 0px;
+display: flex;
+justify-content: center;
+height: 500px;
+align-items: center;
+}
+.frame1, .frame2{
+width: 49%;
+/* border: 2px solid black; */
+height: 500px;
+display: flex;
+justify-content: center;
+/* align-items: center ; */
+padding-left: 112px;
+flex-direction: column;
+}
+.line{
+    height: 175px;
+border: 1px solid #4d3bdb;
+width: 0%;
+/* margin-top: 50px; */
+}
+.frame1 img, .frame2 img{
+    width: 82%;
+    height: 73%;
+}
+.frame1 h1, .frame2 h1{
+    font-size: 48px;
+}
+.frame1 span, .frame2 span{
+    color: #4d3bdb;
+}
+.comingsoon{
+    margin-top: 20px;
+    width: 140px;
+    /* padding: 5px 15px; */
+    background-color: white;
+    color: rgb(104, 81, 255);
+    height: 44px;
+    border-radius: 20px;
+    border: 1px solid rgba(104, 81, 255, 0.5);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.75;
+    cursor: pointer;
+}
+.comingsoon:hover{
+    background-color: rgba(104, 81, 255, 0.04);
+}
+
+/* footer */
+
+.foot{
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    height: 460px;
+
+}
+.footupper{
+    height: 85%;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footupperbox{
+    /* border: 2px solid black; */
+    /* border: 2px solid black; */
+    width: 85%;
+    height: 90%;
+    display: flex;
+}
+.social{
+    width: 30%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 17px;
+
+    
+}
+.social p{
+    line-height: 25px;
+
+}
+.social img{
+    margin-right: 60px;
+}
+.footimages img{
+    margin-top: 20px;
+
+}
+.contact{
+    /* border: 2px solid black; */
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    color: white;
+    /* color: white; */
+    align-items: center;
+}
+.contactbox a{
+    color: white;
+}
+.contactbox{
+    height: 150px;
+}
+.contactbox h3{
+    margin-bottom: 40px;
+}
+
+.footlower{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-items: center;
+    height: 15%;
+
+}
+.policy{
+    display: flex;
+    gap: 10px;
+    /* text-align: center; */
+    justify-content: center;
+
+}
+.policy a{
+    color: white;
+}
+.policy a:hover{
+    text-decoration: underline;
 }
