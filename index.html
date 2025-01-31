@@ -26,7 +26,8 @@
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
 </head>
@@ -34,7 +35,7 @@
 <body>
     <!-- Nav Bar -->
 
-    <div>
+    <div class="d-flex">
         <!-- <nav class="nav-bar">
 
 
@@ -69,48 +70,49 @@
 
         <nav class="navbar navbar-expand-lg bg-body-light">
             <div class="container-fluid">
-              <a class="navbar-brand navbox-1" href="#"><img src="/assets/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#people">People</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#jobs">Jobs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#login">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#join-now">Join Now</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#employee">Employee/ Post Job</a>
-                  </li>
-                
-                </ul>
+                <a class="navbar-brand navbox-1" href="#"><img src="/assets/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#people">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jobParentBox">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#join-now">Join Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#employee">Employee/ Post Job</a>
+                        </li>
+
+                    </ul>
 
 
-              </div>
+                </div>
             </div>
 
-            <!-- <div class="navbox-3">
-                <div class="mode">
-                    <div id="circle"  onclick="themebtn()">
-                        <img id="circle-img"  src="/assets/sun1.png" alt="">
-                    </div>
-                    <div class="grey"></div>
-                    
+            
+        </nav>
+        <div class="navbox-3">
+            <div class="mode">
+                <div id="circle"  onclick="themebtn()">
+                    <img id="circle-img"  src="/assets/sun1.png" alt="">
                 </div>
-            </div> -->
-
-          </nav>
+                <div class="grey"></div>
+                
+            </div>
+        </div>
 
 
     </div>
@@ -122,10 +124,13 @@
     <section class="sec1">
 
         <div class="container1">
+            
+            <div class="container1-h1">
+                <h1>Dig. Apply Prepare Your Future</h1>
+            </div>
 
-            <h1>Dig. Apply <br> Prepare Your Future</h1>
-
-            <p>Hiring Mine connects employer and job seekers, where employers are the source of the resources and the
+            <p class="mb-3">Hiring Mine connects employer and job seekers, where employers are the source of the
+                resources and the
                 job seeker can find and apply for their targeted job.</p>
 
             <div class="formsection">
@@ -141,7 +146,7 @@
 
             <h2>Popular Searches</h2>
 
-            <div class="keywords">
+            <div class="keywords mb-4">
                 <div class="key">
                     <a href="">Software</a>
                 </div>
@@ -183,16 +188,17 @@
                 </div>
             </div>
 
+            <section class="sec2">
 
+                <img src="/assets/large img.png" alt="">
+            </section>
         </div>
 
     </section>
 
     <!-- section 2 -->
 
-    <section class="sec2">
-        <img src="/assets/large img.png" alt="">
-    </section>
+
 
     <!-- section 6 -->
 
@@ -203,11 +209,64 @@
             <h1><span>Latest And Top </span>Job Openings</h1>
         </div>
         <div id="jobParentBox" class="cardparent">
-         
-           
+
+
 
         </div>
 
+    </section>
+
+    <!-- section 8 -->
+
+    <section class="sec8">
+        <h1 class="sec6-box text-center"><span>The Wall</span> of Love</h1>
+        <div id="reviewContainer">
+            <div class="reviewBox">
+                <div class="userDetails">
+                    <div class="profileCircle">A </div>
+                    <div>
+
+                        <h4 class="mb-0">Anonymous</h4>
+                        <span>Product</span>
+                    </div>
+                </div>
+                <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde quisquam aliquid
+                    nemo?</p>
+                <div class="reviewImageBox">
+                    <img src="https://www.hiringmine.com/assets/DashboardForUser-30c696f3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="reviewBox">
+                <div class="userDetails">
+                    <div class="profileCircle">A </div>
+                    <div>
+
+                        <h4 class="mb-0">Anonymous</h4>
+                        <span>Product</span>
+                    </div>
+                </div>
+                <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde quisquam aliquid
+                    nemo?</p>
+                <div class="reviewImageBox">
+                    <img src="https://www.hiringmine.com/assets/DashboardForUser-30c696f3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="reviewBox">
+                <div class="userDetails">
+                    <div class="profileCircle">A </div>
+                    <div>
+
+                        <h4 class="mb-0">Anonymous</h4>
+                        <span>Product</span>
+                    </div>
+                </div>
+                <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde quisquam aliquid
+                    nemo?</p>
+                <div class="reviewImageBox">
+                    <img src="https://www.hiringmine.com/assets/DashboardForUser-30c696f3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -268,6 +327,19 @@
 
     </section>
 
+    <!-- section 9 -->
+
+    <section class="sec8">
+        <h1 class="sec6-box text-center"><span>Our Top</span> Profiles</h1>
+        <p class="text-center mb-4">Explore a curated selection of the most talented and skilled professionals from
+            diverse industries. We connect top-tier individuals with companies seeking exceptional expertise to achieve
+            their goals.</p>
+
+        <div id="highProfileContainer" class="d-flex gap-3 flex-wrap justify-content-center">
+
+        </div>
+    </section>
+
     <!-- section 5 -->
 
     <section class="sec5">
@@ -280,17 +352,18 @@
 
             <ul id="catergories" class="job-box">
 
-                 
-
-                </ul>
 
 
+            </ul>
 
-        <div class="view">
-            <span><a href="">View All 
-                <img src="/assets/Free_Blue_Right_Arrow_PNG__SVG_Icon__1_-removebg-preview.png" alt="" width="20px">
-            </a></span>
-        </div>
+
+
+            <div class="view">
+                <span><a href="">View All
+                        <img src="/assets/Free_Blue_Right_Arrow_PNG__SVG_Icon__1_-removebg-preview.png" alt=""
+                            width="20px">
+                    </a></span>
+            </div>
 
 
 
@@ -299,7 +372,7 @@
 
     <!-- section 6  -->
 
-   
+
 
     <!-- section 7 -->
 
@@ -322,30 +395,41 @@
             <div class="footupper">
                 <div class="footupperbox">
                     <div class="social">
-                        <div style="margin-top: 50px;">
+                        <div >
 
                             <img src="/assets/footer logo.png" height="33px" alt="">
-                            <p>HiringMine connects employer and job seekers, where employers are the source of the resources and the job seeker can find and apply for their targeted job.</p>
+                            <p>HiringMine connects employer and job seekers, where employers are the source of the
+                                resources and the job seeker can find and apply for their targeted job.</p>
                         </div>
 
                         <div class="footimages">
-                        <h2>Follow us</h2>
+                            <h2>Follow us</h2>
+                            <div class="d-flex gap-4">
 
-                        <a href="https://www.facebook.com/hiringmine/">
+                                <a href="https://www.facebook.com/hiringmine/">
+                                    <img src="/assets/facebook logo.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/assets/WhatsAppIcon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/assets/IstagramIcon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/assets/LinkedinIcon.svg" alt="">
+                            </a>
+                        </div>
 
-                            <img src="/assets/facebook logo.svg" alt="">
-                        </a>
-                            <img src="/assets/WhatsAppIcon.svg" alt="">
-                            <img src="/assets/IstagramIcon.svg" alt="">
-                            <img src="/assets/LinkedinIcon.svg" alt="">
+
+
                         </div>
 
                     </div>
                     <div class="contact">
-                        <div class="contactbox">
+                        <div class="contactbox mb-4">
                             <h3>Contact Us</h3>
                             <p>
-                                <i class="fa fa-envelope"></i> 
+                                <i class="fa fa-envelope"></i>
                                 <a href="mailto:irtazaahmedk@gmail.com">portal.hiringmine@gmail.com</a>
                             </p>
                         </div>
@@ -356,12 +440,12 @@
 
 
             <div class="footlower">
-                <div >
+                <div>
 
                     <div class="policy">
                         <p><a href="https://hiringmine.com/privacypolicy">Privacy Policy</a></p>
                         <p><a href="">Terms and Condition</a></p>
-                        
+
                     </div>
                     <div class="copyyright">
                         Copyright Hiringmine 2024. All Rights Reserved
@@ -372,7 +456,9 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
 
 </body>
