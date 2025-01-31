@@ -20,6 +20,7 @@ if (img.src.includes("/assets/sun1.png")) {
     img.src = "/assets/sun1.png"
 
 }
+
 // if(circle.style.left = "30px") {
 // circle.style.left = "50px"
 // } else if (circle.style.left = "50px") {

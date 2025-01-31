@@ -8,9 +8,11 @@
 
 
 :root{
+    /* --purple:rgb(202, 41, 202); */
     --primary-color: white;
     --secondary-color: rgb(24 24 24);
 }
+
 body.darktheme{
     
     background-color: var(--secondary-color);
@@ -18,12 +20,20 @@ body.darktheme{
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 ul {
     list-style: none;
+    margin-bottom: 0px;
+
+}
+p{
+    margin-bottom: 0px !important;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0px;
 }
 
 /* nav bar */
@@ -254,7 +264,7 @@ body.darktheme .submit{
     border-right: none;
 } */
 
-.btn {
+.btns {
     width: 150px;
     height: 50px;
 
@@ -266,11 +276,11 @@ body.darktheme .submit{
     font-weight: bold;
 }
 
-.btn a {
-    color: white;
+.btns a {
+    color: white !important;
 }
 
-.btn:hover {
+.btns:hover {
     background-color: rgb(72 55 178);
     cursor: pointer;
 }
@@ -316,7 +326,7 @@ body.darktheme .submit{
 }
 
 .key a {
-    color: rgb(104, 81, 255);
+    color: rgb(104, 81, 255)  !important;
     padding: 15px;
     font-weight: bold;
 }
@@ -378,7 +388,7 @@ body.darktheme .submit{
     /* height: 300px; */
     /* border: 2px solid black; */
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -474,8 +484,18 @@ body.darktheme .childbox p{
 
 
 .job-box {
+    width: 100%;
+    align-items: center;
     margin-bottom: 12px;
     justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.job-box li{
+    width: 270px;
+    padding: 10px;
+
 }
 
 .job-box a {
