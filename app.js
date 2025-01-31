@@ -60,35 +60,36 @@ const getJobs = async()=> {
             let {data} = res
             console.log(data);
             data.slice(0, 6).map((value)=> {
-                let li = document.createElement("li")
-                li.classList.add("childbox")
-                li.innerHTML=   `            <div class="card">
+                let div = document.createElement("div")
+                div.classList.add("cardBox")
+                div.innerHTML=   `            
                 <a href="https://hiringmine.com/jobsearch?jid=66967f7e058dfbf2fef3f7ed">
                     <div class="card-upperpart">
                         <div class="card-portion1">
-                            <p>Anonymous</p>
-                            <p>Expert Shopify Developer</p>
-                            <span>No Salary Mentioned</span>
-                        </div>
-                        <div class="card-portion2">
+                            <p class="companyName">${value.companyName ? value.companyName : "Anonymous"}</p>
                             <img src="/assets/icon.png" alt="">
+                            </div>
+                            <div class="card-portion2">
+                            <p>${value.designation}</p>
+                            <span>${value.payRangeStart === 0 && value.payRangeEnd === 0 ?  "No Salary Mentioned" : `${value.payRangeStart} - ${value.payRangeEnd}`}</span>
                         </div>
 
                     </div>
 
                     <div class="card-lowerpart">
                         <div class="lower-box1">
-                            <p></p>
-                        </div>
-                        <div class="lower-box2">
+                            <p>${value.city}  ${value.country}</p>
+                            <p>${value.views} views</p>
+                            </div>
+                            <div class="lower-box2">
                             <p>11 days ago</p>
-                            <p>8 views</p>
+                            <p>Posted By ${value.user.firstName}</p>
                         </div>
                     </div>
 
                 </a>
-            </div>`
-                document.getElementById("catergories").appendChild(li)
+            `
+                document.getElementById("jobParentBox").appendChild(div)
             })
             
             
@@ -97,5 +98,5 @@ const getJobs = async()=> {
         
     }
 }
-
+getJobs()
 // getCategories()
