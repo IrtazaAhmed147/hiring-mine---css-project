@@ -23,7 +23,7 @@
 
 
     <!--page icon -->
-    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/hiringmineicon.png" type="image/x-icon">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,37 +36,6 @@
     <!-- Nav Bar -->
 
     <div class="d-flex">
-        <!-- <nav class="nav-bar">
-
-
-            <div class="navbox-1">
-                <img src="/assets/logo.png" alt="">
-            </div>
-
-
-            <div class="navbox-2">
-
-                <ul>
-                    <li class=""><a href=""> About Us </a></li>
-                    <li class=""><a href=""> People </a></li>
-                    <li class="abbr"><a href="">Jobs</a></li>
-                    <li class="abbr"><a href="">Login</a></li>
-                    <li class=""><a href="">Join Now</a></li>
-                    <li class="li-blue"><a href="">Employee/ Post Job</a></li>
-                </ul>
-
-            </div>
-            <div class="navbox-3">
-                <div class="mode">
-                    <div id="circle"  onclick="themebtn()">
-                        <img id="circle-img"  src="/assets/sun1.png" alt="">
-                    </div>
-                    <div class="grey"></div>
-                    
-                </div>
-            </div>
-        </nav> -->
-        <!-- <img class="circle-img"  src="/assets/moon2.png" alt=""> -->
 
         <nav class="navbar navbar-expand-lg bg-body-light">
             <div class="container-fluid">
@@ -102,29 +71,29 @@
                 </div>
             </div>
 
-            
+
         </nav>
         <div class="navbox-3">
-            <div class="mode">
-                <div id="circle"  onclick="themebtn()">
-                    <img id="circle-img"  src="/assets/sun1.png" alt="">
+
+            <label class="ui-switch" style="position: absolute; top: 20px; ">
+                <input id="themeSwitch" type="checkbox">
+                <div class="slider">
+                    <div class="circle" id="label"></div>
                 </div>
-                <div class="grey"></div>
-                
-            </div>
+            </label>
+
         </div>
 
 
     </div>
 
-    <!-- main -->
 
     <!-- section 1 -->
 
-    <section class="sec1">
+    <section class="sec1 gradientBack">
 
         <div class="container1">
-            
+
             <div class="container1-h1">
                 <h1>Dig. Apply Prepare Your Future</h1>
             </div>
@@ -135,9 +104,9 @@
 
             <div class="formsection">
 
-                <form action="">
+                <form >
                     <input class="search" type="search" placeholder="Search by Role or Keyword" required>
-                    <input class="submit" type="image" src="/assets/form img.svg" name="" id="">
+                    <input class="submit" type="image" src="/assets/form img.svg">
                 </form>
 
                 <button class="btns"><a href="">Find Jobs</a></button>
@@ -204,14 +173,16 @@
 
 
     <section class="sec6">
-        <div class="sec6-box">
+        <div class="sec6-box px-3">
 
             <h1><span>Latest And Top </span>Job Openings</h1>
         </div>
         <div id="jobParentBox" class="cardparent">
 
 
-
+            <svg viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+            </svg>
         </div>
 
     </section>
@@ -284,25 +255,25 @@
 
             <div class="childbox">
                 <button class="icon-btn"><i class="fa fa-user"></i></button>
-                <h2>Create an Account</h2>
+                <h2 class="mb-0">Create an Account</h2>
                 <p>Join our vibrant community. Create your account and unlock boundless opportunities.</p>
             </div>
 
             <div class="childbox">
                 <button class="icon-btn"><i class="fa fa-search"></i></button>
-                <h2>Search a Job</h2>
+                <h2 class="mb-0">Search a Job</h2>
                 <p>Discover your ideal job. Our intuitive search feature makes job hunting effortless.</p>
             </div>
 
             <div class="childbox">
                 <button class="icon-btn"><i class="fa fa-file-text"></i></button>
-                <h2>Upload CV/Resume</h2>
+                <h2 class="mb-0">Upload CV/Resume</h2>
                 <p>Showcase your expertise. Upload your CV or resume and stand out to employers.</p>
             </div>
 
             <div class="childbox">
                 <button class="icon-btn"><i class="fa fa-briefcase"></i></button>
-                <h2>Get a Job</h2>
+                <h2 class="mb-0">Get a Job</h2>
                 <p>Achieve your career goals. Apply for jobs and embark on your next adventure.</p>
             </div>
 
@@ -337,6 +308,9 @@
 
         <div id="highProfileContainer" class="d-flex gap-3 flex-wrap justify-content-center">
 
+            <svg viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+            </svg>
         </div>
     </section>
 
@@ -350,9 +324,12 @@
 
         <div class="parentbox jobslist">
 
-            <ul id="catergories" class="job-box">
+            <ul id="catergories" class="job-box p-0">
 
 
+                <svg viewBox="25 25 50 50">
+                    <circle r="20" cy="50" cx="50"></circle>
+                </svg>
 
             </ul>
 
@@ -395,7 +372,7 @@
             <div class="footupper">
                 <div class="footupperbox">
                     <div class="social">
-                        <div >
+                        <div>
 
                             <img src="/assets/footer logo.png" height="33px" alt="">
                             <p>HiringMine connects employer and job seekers, where employers are the source of the
@@ -406,19 +383,19 @@
                             <h2>Follow us</h2>
                             <div class="d-flex gap-4">
 
-                                <a href="https://www.facebook.com/hiringmine/">
+                                <a href="#">
                                     <img src="/assets/facebook logo.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="/assets/WhatsAppIcon.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="/assets/IstagramIcon.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="/assets/LinkedinIcon.svg" alt="">
-                            </a>
-                        </div>
+                                </a>
+                                <a href="#">
+                                    <img src="/assets/WhatsAppIcon.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/assets/IstagramIcon.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/assets/LinkedinIcon.svg" alt="">
+                                </a>
+                            </div>
 
 
 
@@ -430,7 +407,7 @@
                             <h3>Contact Us</h3>
                             <p>
                                 <i class="fa fa-envelope"></i>
-                                <a href="mailto:irtazaahmedk@gmail.com">portal.hiringmine@gmail.com</a>
+                                <a href="#">portal.hiringmine@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -443,8 +420,8 @@
                 <div>
 
                     <div class="policy">
-                        <p><a href="https://hiringmine.com/privacypolicy">Privacy Policy</a></p>
-                        <p><a href="">Terms and Condition</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Terms and Condition</a></p>
 
                     </div>
                     <div class="copyyright">

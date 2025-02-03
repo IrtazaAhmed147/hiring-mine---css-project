@@ -1,22 +1,37 @@
-
 let body = document.getElementsByTagName("body")[0]
+let label = document.getElementById("label")
+let themeSwitch = document.getElementById("themeSwitch")
+let theme = JSON.parse(localStorage.getItem("hiringThemeMode"))
 
-let circle = document.getElementById("circle")
+if (theme === "dark") {
+    themeSwitch.checked = true
+    body.classList.add("darktheme")
+    document.querySelector(".sec1").classList.remove("gradientBack")
+    } else {
 
-let img = document.getElementById("circle-img")
+    localStorage.setItem("hiringThemeMode", JSON.stringify("light"))
+    theme = JSON.parse(localStorage.getItem("hiringThemeMode"))
+}
 
 function themebtn() {
 
-    circle.classList.toggle("circle-anime")
+    if (theme === "dark") {
+        
+        body.classList.remove("darktheme")
+        document.querySelector(".sec1").classList.add("gradientBack")
+        localStorage.setItem("hiringThemeMode", JSON.stringify("light"))
+        theme = JSON.parse(localStorage.getItem("hiringThemeMode"))
+    } else if (theme === "light") {
+        
+        body.classList.add("darktheme")
+        document.querySelector(".sec1").classList.remove("gradientBack")
 
-    if (img.src.includes("/assets/sun1.png")) {
-        img.src = "/assets/moon2.png"
-    } else {
-        img.src = "/assets/sun1.png"
+        localStorage.setItem("hiringThemeMode", JSON.stringify("dark"))
+        theme = JSON.parse(localStorage.getItem("hiringThemeMode"))
     }
-    body.classList.toggle("darktheme")
 
 }
+label.addEventListener("click", themebtn)
 
 
 const getCategories = async () => {
@@ -27,12 +42,13 @@ const getCategories = async () => {
         if (!res.status) {
             return
         }
+
         let { data } = res
-        console.log(data);
+        document.getElementById("catergories").innerHTML = ""
         data.slice(0, 8).map((value) => {
             let li = document.createElement("li")
             li.classList.add("childbox")
-            li.innerHTML = `  <a href="https://hiringmine.com/jobsearch?category=6499f660d7d3bec5b121e02f">
+            li.innerHTML = `  <a href="#catergories">
                          
                          <img src="/assets/box.svg" alt="">
                          <h4 >${value.name}</h4>
@@ -44,7 +60,17 @@ const getCategories = async () => {
 
 
     } catch (error) {
+
         console.log(error);
+
+
+        if (!navigator.online) {
+
+            document.getElementById("catergories").innerHTML = "Network Connection Error"
+        } else {
+
+            document.getElementById("catergories").innerHTML = error.message
+        }
 
     }
 }
@@ -58,12 +84,20 @@ const getJobs = async () => {
             return
         }
         let { data } = res
-        console.log(data);
+        document.getElementById("jobParentBox").innerHTML = ""
         data.slice(0, 6).map((value) => {
             let div = document.createElement("div")
             div.classList.add("cardBox")
+
+            let createdDate = new Date(value.createdAt)?.getDate()
+            let currentDate = new Date().getDate()
+
+            let daysAgo = currentDate - createdDate
+
+
+
             div.innerHTML = `            
-                <a href="https://hiringmine.com/jobsearch?jid=66967f7e058dfbf2fef3f7ed">
+                <a href="#jobParentBox">
                     <div class="card-upperpart">
                         <div class="card-portion1">
                             <p class="companyName">${value.companyName ? value.companyName : "Anonymous"}</p>
@@ -82,7 +116,7 @@ const getJobs = async () => {
                             <p>${value.views} views</p>
                             </div>
                             <div class="lower-box2">
-                            <p>11 days ago</p>
+                            <p>${daysAgo} ${daysAgo > 1 ? "days ago" : "day ago"}</p>
                             <p>Posted By ${value.user.firstName}</p>
                         </div>
                     </div>
@@ -95,6 +129,14 @@ const getJobs = async () => {
 
     } catch (error) {
         console.log(error);
+        
+        if (!navigator.online) {
+
+            document.getElementById("jobParentBox").innerHTML = "Network Connection Error"
+        } else {
+
+            document.getElementById("jobParentBox").innerHTML = error.message
+        }
 
     }
 }
@@ -107,14 +149,14 @@ const getHighProfile = async () => {
             return
         }
         let { data } = res
-        console.log(data);
+        document.getElementById("highProfileContainer").innerHTML = ""
         data.slice(0, 6).map((value) => {
             let div = document.createElement("div")
             div.classList.add("highProfileBox")
             div.innerHTML = `            
-              
-                <div class="highProfileImage">
-                    <img src="${value.profilePic ? value.profilePic : "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"}" alt="">
+            
+            <div class="highProfileImage">
+            <img src="${value.profilePic ? value.profilePic : "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"}" alt="">
                 </div>
                 <div>
                     <p class="small" style="color: #4d3bdb">${value.firstName} ${value.lastName}</p>
@@ -131,6 +173,14 @@ const getHighProfile = async () => {
 
     } catch (error) {
         console.log(error);
+
+        if (!navigator.online) {
+
+            document.getElementById("highProfileContainer").innerHTML = "Network Connection Error"
+        } else {
+
+            document.getElementById("highProfileContainer").innerHTML = error.message
+        }
 
     }
 }
