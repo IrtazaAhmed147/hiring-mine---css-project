@@ -50,7 +50,7 @@ const getCategories = async () => {
             li.classList.add("childbox")
             li.innerHTML = `  <a href="#catergories">
                          
-                         <img src="/assets/box.svg" alt="">
+                         <img src="./assets/box.svg" alt="">
                          <h4 >${value.name}</h4>
                          <p>${value.postCounts} Jobs</p>
                         </a>
@@ -101,7 +101,7 @@ const getJobs = async () => {
                     <div class="card-upperpart">
                         <div class="card-portion1">
                             <p class="companyName">${value.companyName ? value.companyName : "Anonymous"}</p>
-                            <img src="/assets/icon.png" alt="">
+                            <img src="./assets/icon.png" alt="">
                             </div>
                             <div class="card-portion2">
                             <p>${value.designation}</p>
